@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('img/green-gradient.avif') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .navbar {
+    background-color: rgba(15, 38, 23, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+  }
+  
+  .navbar .navbar-brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #d8f3dc;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #0edc7c;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links a:hover {
+    color: #a3bfaf;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+ 
+  .container a.btn {
+    background-color: rgba(2, 71, 81, 0.9);
+   
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  .container a.btn i {
+    margin-bottom: 10px;
+  }
+  
+  .container a.btn:hover {
+    background-color: #0edc7c;
+    color: #000;
+    transform: translateY(-4px);
+  }
+  
+  .container a.btn:active {
+    transform: scale(0.98);
+  }
+  
+ 
+  .container a.btn.text-white {
+    background-color: #024751;
+    font-weight: bold;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .row.row-cols-5 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  
+    .container a.btn {
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+  }
+  

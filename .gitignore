@@ -1,0 +1,33 @@
+# Temporary password hash generator
+hash.php
+
+# XAMPP / local files
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Windows files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp# Temporary password hash generator
+hash.php
+
+# XAMPP / local files
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Windows files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
